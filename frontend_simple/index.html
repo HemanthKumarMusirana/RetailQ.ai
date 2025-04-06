@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retail AI Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: #2e86de;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #1b4f72;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+      background: white;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    h2 { margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <h1>Retail AI Agent Dashboard</h1>
+
+  <button onclick="getInventory()">Run Inventory Monitoring</button>
+  <div id="inventoryOutput"></div>
+
+  <button onclick="getPricing()">Run Pricing Optimization</button>
+  <div id="pricingOutput"></div>
+
+  <button onclick="getForecast()">Run Demand Forecasting</button>
+  <div id="forecastOutput"></div>
+
+  <button onclick="runMAF()">Run Multi-Agent Flow</button>
+  <h2>🧠 Multi-Agent Flow Result</h2>
+  <div id="mafOutput"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
